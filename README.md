@@ -8,7 +8,7 @@ GitHub repo: https://github.com/mhenry07/aspire-limits-repro
 
 - Run the AppHost project which continually and rapidly generates traces and logs
 - From the Aspire dashboard, navigate to the Traces or Structured Logs view
-- Wait for the traces or structured log limit to be exceeded (roughly 30 seconds)
+- Wait for the traces or structured log limit to be exceeded (roughly 20 seconds)
 - Manually scroll up
 - Note that the auto scrolling behavior of the traces or structured logs continues even after manually scrolling up
 - Make a mental note of a specific trace or structured log that appears on screen

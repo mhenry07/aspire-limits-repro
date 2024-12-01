@@ -21,10 +21,7 @@ while (true)
     using var activity = activitySource.StartActivity("test.activity", ActivityKind.Internal, parentId: null, tags: [new("test.count", count)]);
     logger.LogInformation("Test # {Count}", count);
 
-    if (count % 10 == 0)
-        await Task.Delay(1);
-
-    if (count % 100 == 0)
+    if (count >= 10_000 && count % 100 == 0)
     {
         using var subActivity = activitySource.StartActivity("test.meaningful_activity");
         logger.LogInformation("Meaningful test # {Count}", count);
